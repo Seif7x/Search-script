@@ -1,0 +1,12 @@
+ 
+file=input('which  file  you want to check :   ')
+rfile=open(file)
+
+searchfor=input('what are you looking for on this file   :  ')
+
+for L in rfile:
+	L=L.rstrip()
+	L=L.lower()
+	if searchfor in L: 
+		print('line has been found ')
+		print(L)
